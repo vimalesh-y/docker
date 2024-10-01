@@ -5,4 +5,4 @@ I create a Docker image from a Linux environment with Python. I run the image an
 ## Requirements
 
 - Tested on Python version 3.12.6, which also pulled in pip (version 24.2)
-- Download Docker Desktop (version 4.34.2)
+- Docker Desktop (version 4.34.2)
