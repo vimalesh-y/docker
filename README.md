@@ -9,7 +9,8 @@ I create a Docker image from a Linux environment with Python. I build the image 
 
 ## Key commands
 ### Writing the Dockerfile
-- Use the official Python image based on a Linux environment (Debian Linux): ```FROM python:3.12-slim```
+- Use the official Python image based on a Linux environment (Debian Linux):
+  ```FROM python:3.12-slim```
 
 - Install VIM inside the Docker container:
   ```RUN apt-get update && apt-get install -y vim```
