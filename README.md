@@ -1,6 +1,6 @@
 # Experimenting with Docker
 
-I create a Docker image from a Linux environment with Python. I run the image and a container is started, before I use VIM to create a file within the image and save it. The image is finally stopped.
+I create a Docker image from a Linux environment with Python. I build the image and run a Docker container, before I use VIM to create a file within the image and save it. Finally, the container is stopped.
 
 ## Requirements
 
