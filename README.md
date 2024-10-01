@@ -21,16 +21,20 @@ I create a Docker image from a Linux environment with Python. I build the image 
 - Start a Bash shell by default to keep the container interactive:
   ```CMD ["bash"]```
 
+
 #### Building the Docker image using terminal
 - In the integrated terminal, run this command to build the Docker image: ```docker build -t my-python-vim-image .```
+
 
 #### Running the Docker container
 - After the image is built, run the container and access it using:
   ```docker run -it --name my-python-vim-container my-python-vim-image```
 
+
 #### Create and edit your file within the container using VIM
 - Use VIM editor to create your file:
 ```vim my_file.txt```
+
 
 #### Stopping the Docker container
 - Type ```exit``` to stop the container running.
