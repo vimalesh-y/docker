@@ -1,0 +1,36 @@
+# Use the official Python image based on a Linux environment
+FROM python:3.12-slim
+
+# Install VIM inside the Docker container
+RUN apt-get update && apt-get install -y vim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Start a Bash shell by default to keep the container interactive
+CMD ["bash"]
+
+
+## BUILDING DOCKER IMAGE USING TERMINAL
+# In terminal, run command to build image"
+docker build -t my-python-vim-image .
+
+
+## RUNNING DOCKER CONTAINER
+# After image is built, run container and access it using:
+docker run -it --name my-python-vim-container my-python-vim-image
+
+
+## CREATE AND EDIT FILE WITHIN CONTAINER USING VIM 
+# Use VIM to create file:
+vim my_file.txt
+# Then, edit using vim commands you already learnt about. 
+
+## THEN, STOP CONTAINER BY TYPING 'exit'
+
+## DOUBLE-CHECK IF FILE IS SAVED AFTER CONTAINER HAS BEEN STOPPED
+# Start up container again:
+docker start my-python-vim-container
+# Navigate to container's Bash shell
+docker exec -it my-python-vim-container bash
+# Then type 'ls /app' to show contents - file is there.
